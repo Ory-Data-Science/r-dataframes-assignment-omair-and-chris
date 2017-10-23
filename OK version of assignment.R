@@ -36,3 +36,15 @@ str(shrub_dimensions)
 #> 
 
 
+head(shrub_dimensions)
+## A tibble: 6 x 5
+#site experiment length width height
+#<int>      <int>  <dbl> <dbl>  <dbl>
+#  1     1          1    2.2   1.3    9.6
+#2     1          2    2.1   2.2    7.6
+#3     1          3    2.7   1.5    2.2
+#4     2          1    3.0   4.5    1.5
+#5     2          2    3.1   3.1    4.0
+#6     2          3    2.5   2.8    3.0
+
+
