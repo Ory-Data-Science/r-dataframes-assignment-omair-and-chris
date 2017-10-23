@@ -48,3 +48,24 @@ head(shrub_dimensions)
 #6     2          3    2.5   2.8    3.0
 
 
+print(select(shrub_dimensions,length))
+#print(select(shrub_dimensions, length))
+## A tibble: 12 x 1
+#length
+#<dbl>
+#  1    2.2
+#2    2.1
+#3    2.7
+#4    3.0
+#5    3.1
+#6    2.5
+#7    1.9
+#8    1.1
+#9    3.5
+#10    2.9
+#11    4.5
+#12    1.2
+
+
+
+
