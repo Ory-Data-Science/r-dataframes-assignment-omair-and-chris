@@ -67,5 +67,21 @@ print(select(shrub_dimensions,length))
 #12    1.2
 
 
-
+print(select(shrub_dimensions, site, experiment))
+# what I got 
+## A tibble: 12 x 2
+#site experiment
+#<int>      <int>
+#  1     1          1
+#2     1          2
+#3     1          3
+#4     2          1
+#5     2          2
+#6     2          3
+#7     3          1
+#8     3          2
+#9     3          3
+#10     4          1
+#11     4          2
+#12     4          3
 
