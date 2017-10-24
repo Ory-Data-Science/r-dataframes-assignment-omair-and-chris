@@ -105,3 +105,12 @@ by_site <- group_by(shrub_dimensions, site)
 avg_height <- summarize(by_site, avg_height = mean(height))
 
 print(shrub_dimensions%>%group_by(experiment)%>%summarize(max_height=max(height)))
+## A tibble: 3 x 2
+#experiment max_height
+#<int>      <dbl>
+#  1          1        9.6
+#2          2        7.6
+#3          3        7.5
+
+
+
