@@ -91,5 +91,5 @@ print(select(shrub_dimensions, site, experiment))
 
 print(shrub_dimensions%>%filter(height>5))
 
-
+print(shrub_data_w_vols <- mutate(shrub_dimensions, "volume" = length*width*height))
 
