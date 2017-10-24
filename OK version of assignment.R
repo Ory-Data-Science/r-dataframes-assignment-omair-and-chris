@@ -88,3 +88,8 @@ print(select(shrub_dimensions, site, experiment))
 
 
 print(select(shrub_dimensions, site, experiment))
+
+print(shrub_dimensions%>%filter(height>5))
+
+
+
