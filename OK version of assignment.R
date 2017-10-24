@@ -117,6 +117,8 @@ print(shrub_dimensions%>%group_by(site)%>% summarize(max_height=max(height)))
 shrub_volume_experiments_table <- read.csv("shrub-volume-experiment.csv")
 #shrub_volume_experiments_table created.
 
+print(shrub_data_manipulations <- inner_join(shrub_dimensions, shrub_volume_experiments_table, by="experiment"))
+
 
 
 
