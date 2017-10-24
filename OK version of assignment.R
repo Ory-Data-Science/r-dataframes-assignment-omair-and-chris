@@ -103,3 +103,5 @@ print(shrub_data_w_vols <- mutate(shrub_dimensions, "volume" = length*width*heig
 
 by_site <- group_by(shrub_dimensions, site)
 avg_height <- summarize(by_site, avg_height = mean(height))
+
+
