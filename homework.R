@@ -4,7 +4,7 @@ require(tidyverse)
 setwd("~/GitHub/r-dataframes-assignment-omair-and-chris")
 
 #Part 2
-shrub_dimensions <- read_csv("shrub-volume-experiment.csv")
+shrub_dimensions <- read_csv("./Data/shrub-volume-experiment.csv")
 #1
 names(shrub_dimensions)
 #2
@@ -27,7 +27,7 @@ print(shrub_dimensions%>%group_by(experiment)%>%summarize(avg_height=mean(height
 print(shrub_dimensions%>%group_by(site)%>%summarize(max_height=max(height)))
 
 #Part 4
-shrub_volume_experiments_table <- read_csv("shrub-volume-experiments-table.csv")
+shrub_volume_experiments_table <- read_csv("./Data/shrub-volume-experiments-table.csv")
 print(shrub_data_manipulations <-  inner_join(shrub_dimensions, shrub_volume_experiments_table, by="experiment"))
 
 #Part 5
@@ -47,7 +47,7 @@ print(avg_vol_by_experiment <- shrub_data%>%mutate("volume"=length*width*height)
 #Part 6
 require(dbplyr)
 require(RSQLite)
-portaldb <- src_sqlite("portal_mammals.sqlite")
+portaldb <- src_sqlite("./Data/portal_mammals.sqlite")
 surveys <- tbl(portaldb, "surveys")
 #1
 surveys%>%select(year, month, day, species_id)
