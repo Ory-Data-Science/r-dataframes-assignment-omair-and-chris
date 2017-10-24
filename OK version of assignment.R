@@ -112,5 +112,10 @@ print(shrub_dimensions%>%group_by(experiment)%>%summarize(max_height=max(height)
 #2          2        7.6
 #3          3        7.5
 
+print(shrub_dimensions%>%group_by(site)%>% summarize(max_height=max(height)))
+
+
+
+
 
 
