@@ -85,3 +85,6 @@ print(select(shrub_dimensions, site, experiment))
 #11     4          2
 #12     4          3
 
+
+
+print(select(shrub_dimensions, site, experiment))
