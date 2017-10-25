@@ -27,7 +27,7 @@ print(shrub_dimensions%>%group_by(experiment)%>%summarize(avg_height=mean(height
 print(shrub_dimensions%>%group_by(site)%>%summarize(max_height=max(height)))
 
 #Part 4
-shrub_volume_experiments_table <- read_csv("shrub-volume-experiments-table.csv")
+shrub_volume_experiments_table <- read_csv("./Data/shrub-volume-experiments-table.csv")
 print(shrub_data_manipulations <-  inner_join(shrub_dimensions, shrub_volume_experiments_table, by="experiment"))
 
 #Part 5
