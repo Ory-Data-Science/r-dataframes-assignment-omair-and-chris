@@ -1,0 +1,9 @@
+Syntax Checking
+Sourcing: when you source it should output a value without error
+R-Script Editing: check for X's and typos in your R file (as marked by red underlined squigglys)
+
+Output Checking
+Naming Conventions: What you name a variable, should be what it is or what the function did
+Line Breaks: Separating long lines into smaller chunks for easier interpretation
+Grouping of Lines: Separate lines by what is being worked on, group them together
+Annotate: SAY WHAT THE LINES ARE DOING EVERY ONCE IN A WHILE

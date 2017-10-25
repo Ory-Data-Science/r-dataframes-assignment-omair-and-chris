@@ -32,7 +32,7 @@ print(shrub_data_manipulations <-  inner_join(shrub_dimensions, shrub_volume_exp
 
 #Part 5
 #Read data, then determine average volume by site, then determine average volume by experiment
-shrub_data <- read_csv("shrub-volume-experiment.csv")
+shrub_data <- read_csv("./Data/shrub-volume-experiment.csv")
 print(avg_vol_by_site <- shrub_data%>%mutate("volume"=length*width*height)%>%group_by(site)%>%
         summarize(mean_volume = mean(volume)))
 print(avg_vol_by_experiment <- shrub_data%>%mutate("volume"=length*width*height)%>%
