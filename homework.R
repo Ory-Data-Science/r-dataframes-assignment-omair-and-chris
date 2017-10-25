@@ -4,7 +4,7 @@ require(tidyverse)
 setwd("~/GitHub/r-dataframes-assignment-omair-and-chris")
 
 #Part 2
-shrub_dimensions <- read_csv("shrub-volume-experiment.csv")
+shrub_dimensions <- read_csv("./Data/shrub-volume-experiment.csv")
 #1
 names(shrub_dimensions)
 #2
