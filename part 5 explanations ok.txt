@@ -1,0 +1,5 @@
+source would output a value, rscript editor  will also check for x's and it's marked by that underline squiggly.
+So those are the 2 ways.
+Syntax
+What we output is right that gets hard. So nameing conventions; so what you name is what you want to get. SO like mean_table is the mean of the table.
+Line breaks also help to make interpretation easier!
